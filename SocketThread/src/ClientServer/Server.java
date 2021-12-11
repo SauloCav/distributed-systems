@@ -84,7 +84,6 @@ public class Server implements Runnable {
 				System.out.println("[Server] Result " + sum + " sent!");
 				output.writeObject(sum);
 				sumTime = sumTime + ((System.currentTimeMillis() - time));
-				System.out.println("[Server] Result " + sum + " sent!");
 				System.out.println("Process Time: " + sumTime + "ms\n" );
 				input.close();
 				output.close();
