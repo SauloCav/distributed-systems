@@ -1,3 +1,3 @@
 # distributed-systems
 
-Activities aimed at learning Distributed Systems
+Activities aimed at learning about Distributed Systems
