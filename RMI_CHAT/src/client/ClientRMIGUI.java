@@ -193,7 +193,7 @@ public class ClientRMIGUI extends JFrame implements ActionListener{
 				if(name.length() != 0){
 					frame.setTitle(name + "'s console ");
 					textField.setText("");
-					textArea.append("username : " + name + " connecting to chat...\n");							
+					textArea.append("Usuário : " + name + " Conectou ao Chat...\n");							
 					getConnected(name);
 					if(!chatClient.connectionProblem){
 						startButton.setEnabled(false);
@@ -201,7 +201,7 @@ public class ClientRMIGUI extends JFrame implements ActionListener{
 						}
 				}
 				else{
-					JOptionPane.showMessageDialog(frame, "Enter your name to Start");
+					JOptionPane.showMessageDialog(frame, "Cadastre seu Nickname para entrar no Chat");
 				}
 			}
 
@@ -209,14 +209,14 @@ public class ClientRMIGUI extends JFrame implements ActionListener{
 				message = textField.getText();
 				textField.setText("");
 				sendMessage(message);
-				System.out.println("Sending message : " + message);
+				System.out.println("Enviando Mensagem: " + message);
 			}
 
 			if(e.getSource() == privateMsgButton){
 				int[] privateList = list.getSelectedIndices();
 				
 				for(int i=0; i<privateList.length; i++){
-					System.out.println("selected index :" + privateList[i]);
+					System.out.println("Index selecionado :" + privateList[i]);
 				}
 				message = textField.getText();
 				textField.setText("");
